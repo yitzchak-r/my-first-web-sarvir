@@ -8,12 +8,7 @@ const routerProduct = require("./router/router");
 // להוסיף פונקציית ביניים של לוגר
 
 // פונקצית בניים של כורס
-app.use(
-  cors({
-    origin: "http://127.0.0.1:5500",
-    optionsSuccessStatus: 200,
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
